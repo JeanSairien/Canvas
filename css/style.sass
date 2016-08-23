@@ -2,6 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat'
 @import 'font-awesome-4.6.3/css/font-awesome.min.css'
 $rose: #ea1d53
+$gris: #cdcdcd
 @mixin prefix($property, $parameters)
   @each $prefix in -webkit-, -moz-, -ms-, -o-, ""
     #{$prefix}#{$property}: $parameters
@@ -25,8 +26,8 @@ header
     height: 110px
     width: 100vw
     background-color: #FFF
-    box-shadow: 0px 0px 10px $rose
-    border-bottom: 1px solid $rose
+    box-shadow: 0px 0px 10px $gris
+    border-bottom: 1px solid $gris
     box-sizing: border-box
     z-index: 9999
     margin-bottom: 40px

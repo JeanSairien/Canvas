@@ -21,8 +21,8 @@ header {
 	height: 110px;
 	width: 100vw;
 	background-color: #FFF;
-	box-shadow: 0px 0px 10px #ea1d53;
-	border-bottom: 1px solid #ea1d53;
+	box-shadow: 0px 0px 10px #cdcdcd;
+	border-bottom: 1px solid #cdcdcd;
 	box-sizing: border-box;
 	z-index: 9999;
 	margin-bottom: 40px;
