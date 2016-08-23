@@ -1,0 +1,74 @@
+@import 'animate.css'
+@import 'https://fonts.googleapis.com/css?family=Montserrat'
+@import 'font-awesome-4.6.3/css/font-awesome.min.css'
+$rose: #ea1d53
+
+body
+    margin: auto
+    font-family: 'Montserrat', sans-serif
+    position: relative
+    height: 100vh
+
+.container
+    width: 1180px
+    margin: auto
+
+header
+    display: flex
+    align-items: center
+    justify-content: center
+    // position: fixed
+    top: 0
+    height: 110px
+    width: 100vw
+    background-color: #FFF
+    box-shadow: 0px 0px 10px $rose
+    border-bottom: 1px solid $rose
+    box-sizing: border-box
+    z-index: 9999
+    margin-bottom: 40px
+
+    #header
+        display: flex
+        flex-direction: row
+        align-items: center
+        height: 110px
+
+        img
+            margin-left: 20px
+
+        #logo_stretch
+            width: 200px
+            height: auto
+            display: none
+
+        nav
+            margin: auto
+
+            ul
+                list-style: none
+                display: flex
+                flex-direction: row
+
+                a
+                    text-decoration: none
+                    color: black
+                    margin-left: auto
+                    margin-right: 50px
+                    cursor: crosshair
+
+                .navtext
+                    color: $rose
+
+.floater
+    height: 90px
+    width: auto
+    display: flex
+    transition: all 600ms ease
+    animation: breathe 3s infinite
+    animation-timing-function: easeOutBack
+    -webkit-filter: drop-shadow(3px 5px 7px rgba(black,.8))
+       -moz-filter: drop-shadow(3px 5px 7px rgba(black,.8))
+
+.floater:hover
+    animation-play-state: paused
