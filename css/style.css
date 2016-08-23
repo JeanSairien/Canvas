@@ -51,13 +51,12 @@ header #header #logo_stretch {
 }
 
 header #header #canvaslogo {
-	width: 50px;
+	width: 53px;
 	height: auto;
 	margin-left: auto;
 }
 
 header #header nav {
-	margin-left: auto;
 	margin-right: 100px;
 	height: 50px;
 }
@@ -112,4 +111,5 @@ header #header nav ul a .navtext {
 
 article {
 	text-align: justify;
+	margin-bottom: 50px;
 }
