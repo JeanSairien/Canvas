@@ -16,7 +16,7 @@ var onScroll = function() {
         headerContent.style.height = "50px";
         bigLogo.style.display = "none";
         stretchLogo.style.display = "block";
-        firstArticle.style.paddingTop = "220px";
+        firstArticle.style.marginTop = "220px";
 
     } else {
         header.style.position = "relative";
@@ -24,7 +24,7 @@ var onScroll = function() {
         headerContent.style.height = "110px";
         bigLogo.style.display = "block";
         stretchLogo.style.display = "none";
-        firstArticle.style.paddingTop = "0px";
+        firstArticle.style.marginTop = "0px";
     }
 };
 window.addEventListener('scroll', onScroll);

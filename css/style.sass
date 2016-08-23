@@ -40,10 +40,19 @@ header
         img
             margin-left: 20px
 
+        #logo_normal
+            width: 90px
+            height: auto
+
         #logo_stretch
             width: 200px
             height: auto
             display: none
+
+        #canvaslogo
+            width: 50px
+            height: auto
+            margin-left: auto
 
         nav
             margin-left: auto
@@ -82,7 +91,7 @@ header
     transition: all 600ms ease
     animation: breathe 3s infinite
     animation-timing-function: easeOutBack
-    @include prefix(filter, drop-shadow(3px 5px 7px rgba(black,.8)))
+    @include prefix(filter, drop-shadow(1px 3px 5px rgba(black,.8)))
 
 .floater:hover
     animation-play-state: paused

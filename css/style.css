@@ -39,10 +39,21 @@ header #header img {
 	margin-left: 20px;
 }
 
+header #header #logo_normal {
+	width: 90px;
+	height: auto;
+}
+
 header #header #logo_stretch {
 	width: 200px;
 	height: auto;
 	display: none;
+}
+
+header #header #canvaslogo {
+	width: 50px;
+	height: auto;
+	margin-left: auto;
 }
 
 header #header nav {
@@ -88,11 +99,11 @@ header #header nav ul a .navtext {
 	transition: all 600ms ease;
 	animation: breathe 3s infinite;
 	animation-timing-function: easeOutBack;
-	-webkit-filter: drop-shadow(3px 5px 7px rgba(0, 0, 0, 0.8));
-	-moz-filter: drop-shadow(3px 5px 7px rgba(0, 0, 0, 0.8));
-	-ms-filter: drop-shadow(3px 5px 7px rgba(0, 0, 0, 0.8));
-	-o-filter: drop-shadow(3px 5px 7px rgba(0, 0, 0, 0.8));
-	filter: drop-shadow(3px 5px 7px rgba(0, 0, 0, 0.8));
+	-webkit-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.8));
+	-moz-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.8));
+	-ms-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.8));
+	-o-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.8));
+	filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.8));
 }
 
 .floater:hover {
