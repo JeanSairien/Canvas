@@ -2,6 +2,9 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat'
 @import 'font-awesome-4.6.3/css/font-awesome.min.css'
 $rose: #ea1d53
+@mixin prefix($property, $parameters)
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, ""
+    #{$prefix}#{$property}: $parameters
 
 body
     margin: auto
@@ -67,11 +70,7 @@ header
     transition: all 600ms ease
     animation: breathe 3s infinite
     animation-timing-function: easeOutBack
-    -webkit-filter: drop-shadow(3px 5px 7px rgba(black,.8))
-       -moz-filter: drop-shadow(3px 5px 7px rgba(black,.8))
-        -ms-filter: drop-shadow(3px 5px 7px rgba(black,.8))
-         -o-filter: drop-shadow(3px 5px 7px rgba(black,.8))
-            filter: drop-shadow(3px 5px 7px rgba(black,.8))
+    @include prefix(filter, drop-shadow(3px 5px 7px rgba(black,.8)))
 
 .floater:hover
     animation-play-state: paused
