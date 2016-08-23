@@ -2,7 +2,7 @@ var header = document.querySelector('header');
 var headerContent = document.getElementById('header');
 var bigLogo = document.getElementById('logo_normal');
 var stretchLogo = document.getElementById('logo_stretch');
-var main = document.querySelector('main');
+var firstArticle = document.querySelectorAll('article')[0];
 
 var scrollY = function() {
     var supportPageOffset = window.pageXOffset !== undefined;
@@ -16,7 +16,7 @@ var onScroll = function() {
         headerContent.style.height = "50px";
         bigLogo.style.display = "none";
         stretchLogo.style.display = "block";
-        main.style.paddingTop = "130px";
+        firstArticle.style.paddingTop = "220px";
 
     } else {
         header.style.position = "relative";
@@ -24,7 +24,7 @@ var onScroll = function() {
         headerContent.style.height = "110px";
         bigLogo.style.display = "block";
         stretchLogo.style.display = "none";
-        main.style.paddingTop = "0px";
+        firstArticle.style.paddingTop = "0px";
     }
 };
 window.addEventListener('scroll', onScroll);

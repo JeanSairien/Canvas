@@ -14,7 +14,7 @@ body
     height: 100vh
 
 .container
-    width: 1180px
+    width: 80%
     margin: auto
 
 header
@@ -46,22 +46,34 @@ header
             display: none
 
         nav
-            margin: auto
+            margin-left: auto
+            margin-right: 100px
+            height: 50px
 
             ul
                 list-style: none
                 display: flex
                 flex-direction: row
+                margin: 0
 
                 a
                     text-decoration: none
                     color: black
-                    margin-left: auto
-                    margin-right: 50px
+                    padding-left: 20px
+                    padding-right: 20px
                     cursor: crosshair
+                    height: 50px
+                    line-height: 50px
 
-                .navtext
-                    color: $rose
+                    &:hover
+                        background-color: $rose
+                        color: white
+                        .navtext
+                            color: white
+
+
+                    .navtext
+                        color: $rose
 
 .floater
     height: 90px
@@ -74,3 +86,6 @@ header
 
 .floater:hover
     animation-play-state: paused
+
+article
+    text-align: justify

@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-	width: 1180px;
+	width: 80%;
 	margin: auto;
 }
 
@@ -46,24 +46,38 @@ header #header #logo_stretch {
 }
 
 header #header nav {
-	margin: auto;
+	margin-left: auto;
+	margin-right: 100px;
+	height: 50px;
 }
 
 header #header nav ul {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
+	margin: 0;
 }
 
 header #header nav ul a {
 	text-decoration: none;
 	color: black;
-	margin-left: auto;
-	margin-right: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 	cursor: crosshair;
+	height: 50px;
+	line-height: 50px;
 }
 
-header #header nav ul .navtext {
+header #header nav ul a:hover {
+	background-color: #ea1d53;
+	color: white;
+}
+
+header #header nav ul a:hover .navtext {
+	color: white;
+}
+
+header #header nav ul a .navtext {
 	color: #ea1d53;
 }
 
@@ -83,4 +97,8 @@ header #header nav ul .navtext {
 
 .floater:hover {
 	animation-play-state: paused;
+}
+
+article {
+	text-align: justify;
 }
