@@ -10,7 +10,7 @@ var scrollY = function() {
     return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
 };
 var onScroll = function() {
-    if (scrollY() > 70) {
+    if (scrollY() > 65) {
         header.style.position = "fixed";
         header.style.height = "50px";
         headerContent.style.height = "50px";

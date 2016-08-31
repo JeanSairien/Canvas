@@ -4,6 +4,7 @@
 body {
 	margin: auto;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 1vw;
 	position: relative;
 	height: 100vh;
 }
@@ -36,7 +37,7 @@ header #header {
 }
 
 header #header img {
-	margin-left: 20px;
+	margin-left: 5vw;
 }
 
 header #header #logo_normal {
@@ -53,11 +54,11 @@ header #header #logo_stretch {
 header #header #canvaslogo {
 	width: 53px;
 	height: auto;
-	margin-left: auto;
+	margin: auto;
 }
 
 header #header nav {
-	margin-right: 100px;
+	margin-right: 5vw;
 	height: 50px;
 }
 
@@ -112,4 +113,5 @@ header #header nav ul a .navtext {
 article {
 	text-align: justify;
 	margin-bottom: 50px;
+	font-size: 1em;
 }
