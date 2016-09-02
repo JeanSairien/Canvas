@@ -110,7 +110,7 @@ header #header nav ul a .navtext {
 	animation-play-state: paused;
 }
 
-article {
+main article {
 	text-align: justify;
 	margin-bottom: 50px;
 	font-size: 1em;
