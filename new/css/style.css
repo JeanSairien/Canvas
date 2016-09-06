@@ -216,26 +216,16 @@ em
 */
 a
 {
-    padding: 0 .1em;
-
-    -webkit-transition: .5s;
-       -moz-transition: .5s;
-        -ms-transition: .5s;
-         -o-transition: .5s;
-            transition: .5s;
+    padding: 5px;
     text-decoration: none;
 
     color: inherit;
-    border-radius: .2em;
-    background: rgba(255,255,255,.5);
-    text-shadow: -1px -1px 2px rgba(100,100,100,.9);
 }
 
 a:hover,
 a:focus
 {
-    background: rgba(255,255,255,1);
-    text-shadow: -1px -1px 2px rgba(100,100,100,.5);
+    border-bottom: 2px solid #FFF
 }
 
 /*
@@ -343,7 +333,7 @@ a:focus
     opacity: 1;
     color: white;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, .28);
+    background-color: rgba(0, 56, 90, .85);
     text-shadow: 0 6px 4px black;
 }
 
@@ -375,7 +365,7 @@ a:focus
 
 #title
 {
-    padding: 0;
+    padding: 40px;
 }
 
 #title .try
@@ -393,7 +383,7 @@ a:focus
             transform: translateZ(20px);
 
     border-radius: 10px;
-    background-color: rgba(128, 128, 128, .68);
+    background-color: rgba(0, 56, 90, .85);
     text-shadow: 0 3px 5px #020202;
 }
 
@@ -427,7 +417,7 @@ a:focus
     z-index: 1;
 
     width: 681px;
-    height: 422px;
+    height: 518px;
 
     text-align: center;
 
@@ -536,7 +526,7 @@ a:focus
     width: 805px;
 
     border-radius: 10px;
-    background-color: rgba(128, 128, 128, .85);
+    background-color: rgba(0, 56, 90, .85);
 }
 
 #imagination .imagination
@@ -557,7 +547,7 @@ a:focus
 #source
 {
     border-radius: 38px;
-    background-color: rgba(150, 150, 150, .79);
+    background-color: rgba(0, 56, 90, .85);
     background-repeat: no-repeat;
 }
 
@@ -823,3 +813,9 @@ a:focus
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+
+/* rajout d'une classe pour intégration - raph */
+
+.retour {
+    text-align: center
+}

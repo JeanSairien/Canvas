@@ -1,18 +1,13 @@
 @import 'animate.css'
 @import 'https://fonts.googleapis.com/css?family=Montserrat'
 @import 'font-awesome-4.6.3/css/font-awesome.min.css'
+@import 'generic.css'
+
 $rose: #ea1d53
 $gris: #cdcdcd
 @mixin prefix($property, $parameters)
   @each $prefix in -webkit-, -moz-, -ms-, -o-, ""
     #{$prefix}#{$property}: $parameters
-
-body
-    margin: auto
-    font-family: 'Montserrat', sans-serif
-    font-size: 1vw
-    position: relative
-    height: 100vh
 
 .container
     width: 80%
@@ -31,29 +26,36 @@ header
     box-sizing: border-box
     z-index: 9999
     margin-bottom: 40px
+    position: relative
 
     #header
         display: flex
         flex-direction: row
-        align-items: center
+        align-items: flex-start
+        justify-content: center
         height: 110px
 
-        img
-            margin-left: 5vw
-
-        #logo_normal
-            width: 90px
-            height: auto
+        // #logo_normal
+        //     width: 90px
+        //     height: auto
 
         #logo_stretch
             width: 200px
             height: auto
-            display: none
+            display: block
+            position: absolute
+            top: 50%
+            left: 2%
+            transform: translateY(-50%)
 
-        #canvaslogo
-            width: 53px
+        .canvas-logo
+            width: 107px
             height: auto
-            margin: auto
+            margin: auto 15px
+            transition: all .5s ease
+
+        .canvas-logo-sm
+            width: 49px !important
 
         nav
             margin-right: 5vw
@@ -64,8 +66,9 @@ header
                 display: flex
                 flex-direction: row
                 margin: 0
+                height: 50px
 
-                a
+                .nav-link
                     text-decoration: none
                     color: black
                     padding-left: 20px
@@ -73,33 +76,33 @@ header
                     cursor: crosshair
                     height: 50px
                     line-height: 50px
+                    margin-top: 30px
 
                     &:hover
                         background-color: $rose
                         color: white
-                        .navtext
+                        .nav-text
                             color: white
 
-
-                    .navtext
+                    .nav-text
                         color: $rose
 
-.floater
-    height: 90px
-    width: auto
-    display: flex
-    transition: all 600ms ease
-    animation: breathe 3s infinite
-    animation-timing-function: easeOutBack
-    @include prefix(filter, drop-shadow(1px 3px 5px rgba(black,.8)))
+                .nav-link-sm
+                    margin: 0 !important
 
-.floater:hover
-    animation-play-state: paused
+.active-a
+    background-color: $rose
+.active
+    color: white
 
 main
-    // padding-top: 300px
+    display: flex
+    flex-direction: column
 
     article
+        display: flex
+        flex-direction: column
+        align-items: center
         text-align: justify
         margin-bottom: 50px
-        font-size: 1em
+        padding-top: 60px
