@@ -1,0 +1,25 @@
+@import 'fonts.css';
+
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ea1d53;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#monCanvas{
+  border: 2px solid white;
+  background-color: black;
+  width: 800px;
+  height: 400px;
+}
+
+.font-romain {
+    font-family: 'Give You Glory', cursive;
+    font-size: 1em;
+    text-align: center;
+    color: white
+}

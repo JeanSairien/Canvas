@@ -20,7 +20,7 @@ function OilPainting(){
 		canvas  = document.getElementById("monCanvas");
 		context = canvas.getContext('2d');
     // Taille de la zone de dessin
-		width = 600;
+		width = 800;
 		height = 400;
 
 		canvas.width = width;
@@ -53,7 +53,7 @@ function OilPainting(){
 		prevPos.y = (e.layerY);
 
 	   // Détermination de la taille des traits et du contexte lors du mouvement
-	   var lWidth = (Math.random()+15/10-0.5)*size+(1-Math.random()+25/20-0.5)*size;
+	   var lWidth = (Math.random()+35/10-0.5)*size+(1-Math.random()+35/20-0.5)*size;
 	   context.lineWidth = lWidth;
 	   context.strokeWidth = lWidth;
 
