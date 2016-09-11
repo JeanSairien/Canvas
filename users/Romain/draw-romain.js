@@ -17,7 +17,7 @@ function OilPainting(){
 
   // Fonction d'initialisation qui sera appelé pour le constructeur OilPainting
 	this.initialize = function(){
-		canvas  = document.getElementById("monCanvas");
+		canvas  = document.getElementById("monCanvas-romain");
 		context = canvas.getContext('2d');
     // Taille de la zone de dessin
 		width = 800;

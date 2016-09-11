@@ -2,7 +2,6 @@
 @import url(fonts.css);
 @import url(font-awesome-4.6.3/css/font-awesome.min.css);
 @import url(generic.css);
-@import url(style-romain.css);
 .container {
 	width: 80%;
 	margin: auto;
@@ -33,7 +32,7 @@ header #header {
 }
 
 header #header #logo_stretch {
-	width: 200px;
+	width: 10vw;
 	height: auto;
 	display: block;
 	position: absolute;
@@ -138,12 +137,79 @@ main article {
 }
 
 main article .elt-art1 {
-	margin: 20px;
+	margin: 20px 20px 40px 20px;
 }
 
 main article .img-prez {
-	width: 100%;
+	width: 125%;
 	height: auto;
 	border: 1px solid;
 	box-shadow: 0 0 10px #000;
+}
+
+main #deux aside {
+	display: flex;
+	flex-direction: row;
+}
+
+main #deux aside .carre {
+	width: 20vw;
+	height: 20vw;
+	background-color: grey;
+	background-size: cover;
+	margin: .5vw;
+	position: relative;
+}
+
+main #deux aside .carre:hover .carre-hover {
+	display: flex;
+}
+
+main #deux aside .carre-romain {
+	background-image: url(../pix/miniature-romain1.jpg);
+}
+
+main #deux aside .carre-david {
+	background-image: url(../pix/miniature-david1.jpg);
+}
+
+main #deux aside .carre-rama {
+	background-image: url(../pix/miniature-rama1.jpg);
+}
+
+main #deux aside .carre-hover {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+	color: white;
+	width: 20vw;
+	height: 20vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	box-shadow: 0 0 0 black;
+	border: 1px solid black;
+	transition: all .5s ease;
+	box-sizing: border-box;
+}
+
+main #deux aside .carre-hover:hover {
+	background-color: rgba(0, 0, 0, 0.85);
+	box-shadow: 0 0 10px black;
+}
+
+main #deux aside .carre-hover p {
+	font-size: 0.8em;
+}
+
+main #deux aside .carre-hover a {
+	color: white;
+	margin-bottom: 5vw;
+}
+
+main #deux aside .carre-hover a:hover {
+	color: #ea1d53;
 }
