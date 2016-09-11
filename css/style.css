@@ -213,3 +213,7 @@ main #deux aside .carre-hover a {
 main #deux aside .carre-hover a:hover {
 	color: #ea1d53;
 }
+
+main #cinq .my {
+	color: pink;
+}
