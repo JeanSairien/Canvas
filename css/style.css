@@ -147,12 +147,12 @@ main article .img-prez {
 	box-shadow: 0 0 10px #000;
 }
 
-main #deux aside {
+main #trois aside {
 	display: flex;
 	flex-direction: row;
 }
 
-main #deux aside .carre {
+main #trois aside .carre {
 	width: 20vw;
 	height: 20vw;
 	background-color: grey;
@@ -161,23 +161,23 @@ main #deux aside .carre {
 	position: relative;
 }
 
-main #deux aside .carre:hover .carre-hover {
+main #trois aside .carre:hover .carre-hover {
 	display: flex;
 }
 
-main #deux aside .carre-romain {
+main #trois aside .carre-romain {
 	background-image: url(../pix/miniature-romain1.jpg);
 }
 
-main #deux aside .carre-david {
+main #trois aside .carre-david {
 	background-image: url(../pix/miniature-david1.jpg);
 }
 
-main #deux aside .carre-rama {
+main #trois aside .carre-rama {
 	background-image: url(../pix/miniature-rama1.jpg);
 }
 
-main #deux aside .carre-hover {
+main #trois aside .carre-hover {
 	display: none;
 	flex-direction: column;
 	justify-content: center;
@@ -196,21 +196,21 @@ main #deux aside .carre-hover {
 	box-sizing: border-box;
 }
 
-main #deux aside .carre-hover:hover {
+main #trois aside .carre-hover:hover {
 	background-color: rgba(0, 0, 0, 0.85);
 	box-shadow: 0 0 10px black;
 }
 
-main #deux aside .carre-hover p {
+main #trois aside .carre-hover p {
 	font-size: 0.8em;
 }
 
-main #deux aside .carre-hover a {
+main #trois aside .carre-hover a {
 	color: white;
 	margin-bottom: 5vw;
 }
 
-main #deux aside .carre-hover a:hover {
+main #trois aside .carre-hover a:hover {
 	color: #ea1d53;
 }
 
