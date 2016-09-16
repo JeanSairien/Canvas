@@ -147,6 +147,114 @@ main article .img-prez {
 	box-shadow: 0 0 10px #000;
 }
 
+main #deux .container-canvas {
+	position: relative;
+	width: 600px;
+	height: 600px;
+	margin-top: 40px;
+}
+
+main #deux .container-canvas canvas {
+	border: 1px solid grey;
+	box-shadow: 0 0 10px grey;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+main #deux .container-canvas .point {
+	font-family: 'Helvetica', sans-serif;
+	position: absolute;
+	color: grey;
+}
+
+main #deux .container-canvas .x {
+	top: -30px;
+	right: -65px;
+}
+
+main #deux .container-canvas .x-trait {
+	top: -15px;
+	right: -80px;
+}
+
+main #deux .container-canvas .y {
+	bottom: -70px;
+	left: -20px;
+}
+
+main #deux .container-canvas .y-trait {
+	transform: rotate(90deg);
+	bottom: -47px;
+	left: -33px;
+}
+
+main #deux .container-canvas .zero {
+	top: -20px;
+	left: -20px;
+}
+
+main #deux .container-canvas .y-100 {
+	top: 93px;
+	left: -40px;
+}
+
+main #deux .container-canvas .y-200 {
+	top: 193px;
+	left: -40px;
+}
+
+main #deux .container-canvas .y-300 {
+	top: 293px;
+	left: -40px;
+}
+
+main #deux .container-canvas .y-400 {
+	top: 393px;
+	left: -40px;
+}
+
+main #deux .container-canvas .y-500 {
+	top: 493px;
+	left: -40px;
+}
+
+main #deux .container-canvas .y-600 {
+	top: 593px;
+	left: -40px;
+}
+
+main #deux .container-canvas .x-100 {
+	top: -30px;
+	left: 88px;
+}
+
+main #deux .container-canvas .x-200 {
+	top: -30px;
+	left: 188px;
+}
+
+main #deux .container-canvas .x-300 {
+	top: -30px;
+	left: 288px;
+}
+
+main #deux .container-canvas .x-400 {
+	top: -30px;
+	left: 388px;
+}
+
+main #deux .container-canvas .x-500 {
+	top: -30px;
+	left: 488px;
+}
+
+main #deux .container-canvas .x-600 {
+	top: -30px;
+	left: 588px;
+}
+
 main #trois aside {
 	display: flex;
 	flex-direction: row;
@@ -175,6 +283,10 @@ main #trois aside .carre-david {
 
 main #trois aside .carre-rama {
 	background-image: url(../pix/miniature-rama1.jpg);
+}
+
+main #trois aside .carre-oualid {
+	background-image: url(../pix/miniature-oualid.jpg);
 }
 
 main #trois aside .carre-hover {
