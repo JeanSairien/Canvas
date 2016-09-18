@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas - Project group #Simplyon2</title>
     <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <link rel="stylesheet" href="css/prism.css" type="text/css">
     <link rel="icon" type="image/png" href="pix/favicon.png" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
@@ -30,9 +31,6 @@
                     <a class="nav-link" href="#quatre">
                         <li class="animated fadeIn"><span class="nav-text">P</span>lus loin</li>
                     </a>
-                    <!-- <a href="#">
-                        <li class="animated fadeIn"><span class="nav-text">R</span>essources</li>
-                    </a> -->
                 </ul>
             </nav>
         </div>
@@ -45,28 +43,53 @@
         </article>
         <article id="deux">
             <h1>Théorie</h1>
-            <div class="container-canvas">
-                <canvas id="canvas-theorie" width="600" height="600"></canvas>
-                <div class="point x">x</div>
-                <div class="point x-trait">_________</div>
-                <div class="point y">y</div>
-                <div class="point y-trait">_________</div>
-                <div class="point zero">0</div>
-                <div class="point zero">0</div>
-                <div class="point y-100">100</div>
-                <div class="point y-200">200</div>
-                <div class="point y-300">300</div>
-                <div class="point y-400">400</div>
-                <div class="point y-500">500</div>
-                <div class="point y-600">600</div>
-                <div class="point x-100">100</div>
-                <div class="point x-200">200</div>
-                <div class="point x-300">300</div>
-                <div class="point x-400">400</div>
-                <div class="point x-500">500</div>
-                <div class="point x-600">600</div>
-            </div>
-            <script src="js/canvas-theorie.js"></script>
+            <aside class="theory">
+                <div class="container-canvas">
+                    <canvas id="canvas-theorie" width="300" height="300"></canvas>
+                    <div class="point x">x</div>
+                    <div class="point x-trait">_________</div>
+                    <div class="point y">y</div>
+                    <div class="point y-trait">_________</div>
+                    <div class="point zero">0</div>
+                    <div class="point zero">0</div>
+                    <div class="point y-100">100</div>
+                    <div class="point y-200">200</div>
+                    <div class="point y-300">300</div>
+                    <div class="point x-100">100</div>
+                    <div class="point x-200">200</div>
+                    <div class="point x-300">300</div>
+                </div>
+                <script src="js/canvas-theorie.js"></script>
+                <script src="js/prism.js"></script>
+                <pre id="first_code" class="language-javascript line-numbers"><code class="language-javascript">
+                    // Je stocke mon élément canvas dans une variable
+                    var canvas = document.getElementById('canvas-theorie');
+                    // Je récupère son contexte qui peut être en 2D ou en 3D (webGL)
+                    var ctx = canvas.getContext('2d');
+                </code></pre>
+                <pre id="second_code" class="language-javascript line-numbers hidden-code"><code class="language-javascript">
+                    // J'initialise mon premier tracé
+                    ctx.beginPath();
+                    // Je définis l'épaisseur du tracé, le contour et le remplissage
+                    ctx.lineWidth = 2;
+                    ctx.strokeStyle = "black";
+                    ctx.fillStyle = "#ea1d53";
+                </code></pre>
+                <pre id="third_code" class="language-javascript line-numbers hidden-code"><code class="language-javascript">
+                    // Je me place au point (100,200)
+                    ctx.moveTo(100,200);
+                    // Je trace un trait jusqu'au point (150,100)
+                    ctx.lineTo(150,100);
+                    // Un autre vers le point (200,200)
+                    ctx.lineTo(200,200);
+                    // Je ferme mon tracé
+                    ctx.closePath();
+                    // Je génère le contour puis le remplissage
+                    ctx.stroke();
+                    ctx.fill();
+                </code></pre>
+
+            </aside>
         </article>
         <article id="trois">
             <h1>Nos réalisations</h1>
@@ -107,6 +130,35 @@
         </article>
         <article id="quatre">
             <h1>Plus loin</h1>
+            <aside>
+                <div class="carre carre-cp1">
+                    <a href="http://codepen.io/jackrugile/full/ohFbx/" target="_blank">
+                        <div class="carre-hover">
+                            <p>Abstract</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carre carre-cp2">
+                    <a href="https://codepen.io/jackrugile/full/Knawg/" target="_blank">
+                        <div class="carre-hover">
+                            <p>Waterfall</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carre carre-cp3">
+                    <a href="https://codepen.io/jackrugile/full/acAgx/" target="_blank">
+                        <div class="carre-hover">
+                            <p>Fireworks</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carre carre-cp4">
+                    <a href="http://thecodeplayer.com/walkthrough/matrix-rain-animation-html5-canvas-javascript" target="_blank">
+                        <div class="carre-hover">
+                            <p>Matrix</p>
+                        </div>
+                    </a>
+            </aside>
         </article>
         <article id="cinq">
             <h1>Références / Ressources</h1>

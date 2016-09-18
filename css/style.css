@@ -146,14 +146,37 @@ main article .img-prez {
 	box-shadow: 0 0 10px #000;
 }
 
-main #deux .container-canvas {
-	position: relative;
+main #deux .theory {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
+
+main #deux .theory pre, main #deux .theory code {
 	width: 600px;
-	height: 600px;
+	height: auto;
+}
+
+main #deux .theory #first_code {
+	align-self: flex-start;
 	margin-top: 40px;
 }
 
-main #deux .container-canvas canvas {
+main #deux .theory .hidden-code {
+	display: none;
+	align-self: flex-start;
+	margin-top: 40px;
+}
+
+main #deux .theory .container-canvas {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 40px 0 100px 0;
+}
+
+main #deux .theory .container-canvas canvas {
 	border: 1px solid grey;
 	box-shadow: 0 0 10px grey;
 	margin: auto;
@@ -162,108 +185,111 @@ main #deux .container-canvas canvas {
 	left: 0;
 }
 
-main #deux .container-canvas .point {
+main #deux .theory .container-canvas .point {
 	font-family: 'Helvetica', sans-serif;
 	position: absolute;
 	color: grey;
 }
 
-main #deux .container-canvas .x {
+main #deux .theory .container-canvas .x {
 	top: -30px;
 	right: -65px;
 }
 
-main #deux .container-canvas .x-trait {
+main #deux .theory .container-canvas .x-trait {
 	top: -15px;
 	right: -80px;
 }
 
-main #deux .container-canvas .y {
+main #deux .theory .container-canvas .y {
 	bottom: -70px;
 	left: -20px;
 }
 
-main #deux .container-canvas .y-trait {
+main #deux .theory .container-canvas .y-trait {
 	transform: rotate(90deg);
 	bottom: -47px;
 	left: -33px;
 }
 
-main #deux .container-canvas .zero {
+main #deux .theory .container-canvas .zero {
 	top: -20px;
 	left: -20px;
 }
 
-main #deux .container-canvas .y-100 {
+main #deux .theory .container-canvas .y-100 {
 	top: 93px;
 	left: -40px;
 }
 
-main #deux .container-canvas .y-200 {
+main #deux .theory .container-canvas .y-200 {
 	top: 193px;
 	left: -40px;
 }
 
-main #deux .container-canvas .y-300 {
+main #deux .theory .container-canvas .y-300 {
 	top: 293px;
 	left: -40px;
 }
 
-main #deux .container-canvas .y-400 {
+main #deux .theory .container-canvas .y-400 {
 	top: 393px;
 	left: -40px;
 }
 
-main #deux .container-canvas .y-500 {
+main #deux .theory .container-canvas .y-500 {
 	top: 493px;
 	left: -40px;
 }
 
-main #deux .container-canvas .y-600 {
+main #deux .theory .container-canvas .y-600 {
 	top: 593px;
 	left: -40px;
 }
 
-main #deux .container-canvas .x-100 {
+main #deux .theory .container-canvas .x-100 {
 	top: -30px;
 	left: 88px;
 }
 
-main #deux .container-canvas .x-200 {
+main #deux .theory .container-canvas .x-200 {
 	top: -30px;
 	left: 188px;
 }
 
-main #deux .container-canvas .x-300 {
+main #deux .theory .container-canvas .x-300 {
 	top: -30px;
 	left: 288px;
 }
 
-main #deux .container-canvas .x-400 {
+main #deux .theory .container-canvas .x-400 {
 	top: -30px;
 	left: 388px;
 }
 
-main #deux .container-canvas .x-500 {
+main #deux .theory .container-canvas .x-500 {
 	top: -30px;
 	left: 488px;
 }
 
-main #deux .container-canvas .x-600 {
+main #deux .theory .container-canvas .x-600 {
 	top: -30px;
 	left: 588px;
 }
 
-main #trois {
+main #trois,
+main #quatre {
 	margin-top: 100px;
 }
 
-main #trois aside {
+main #trois aside,
+main #quatre aside {
 	display: flex;
 	flex-direction: row;
 }
 
-main #trois aside .carre {
+main #trois aside .carre,
+main #quatre aside .carre {
 	width: 20vw;
 	height: 20vw;
 	background-color: grey;
@@ -272,27 +298,53 @@ main #trois aside .carre {
 	position: relative;
 }
 
-main #trois aside .carre:hover .carre-hover {
+main #trois aside .carre:hover .carre-hover,
+main #quatre aside .carre:hover .carre-hover {
 	display: flex;
 }
 
-main #trois aside .carre-romain {
+main #trois aside .carre-romain,
+main #quatre aside .carre-romain {
 	background-image: url(../pix/miniature-romain1.jpg);
 }
 
-main #trois aside .carre-david {
+main #trois aside .carre-david,
+main #quatre aside .carre-david {
 	background-image: url(../pix/miniature-david1.jpg);
 }
 
-main #trois aside .carre-rama {
+main #trois aside .carre-rama,
+main #quatre aside .carre-rama {
 	background-image: url(../pix/miniature-rama1.jpg);
 }
 
-main #trois aside .carre-oualid {
+main #trois aside .carre-oualid,
+main #quatre aside .carre-oualid {
 	background-image: url(../pix/miniature-oualid.jpg);
 }
 
-main #trois aside .carre-hover {
+main #trois aside .carre-cp1,
+main #quatre aside .carre-cp1 {
+	background-image: url(../pix/cp1.jpg);
+}
+
+main #trois aside .carre-cp2,
+main #quatre aside .carre-cp2 {
+	background-image: url(../pix/cp2.jpg);
+}
+
+main #trois aside .carre-cp3,
+main #quatre aside .carre-cp3 {
+	background-image: url(../pix/cp3.jpg);
+}
+
+main #trois aside .carre-cp4,
+main #quatre aside .carre-cp4 {
+	background-image: url(../pix/cp4.jpg);
+}
+
+main #trois aside .carre-hover,
+main #quatre aside .carre-hover {
 	display: none;
 	flex-direction: column;
 	justify-content: center;
@@ -311,21 +363,25 @@ main #trois aside .carre-hover {
 	box-sizing: border-box;
 }
 
-main #trois aside .carre-hover:hover {
+main #trois aside .carre-hover:hover,
+main #quatre aside .carre-hover:hover {
 	background-color: rgba(0, 0, 0, 0.85);
 	box-shadow: 0 0 10px black;
 }
 
-main #trois aside .carre-hover p {
+main #trois aside .carre-hover p,
+main #quatre aside .carre-hover p {
 	font-size: 0.8em;
 }
 
-main #trois aside .carre-hover a {
+main #trois aside .carre-hover a,
+main #quatre aside .carre-hover a {
 	color: white;
 	margin-bottom: 5vw;
 }
 
-main #trois aside .carre-hover a:hover {
+main #trois aside .carre-hover a:hover,
+main #quatre aside .carre-hover a:hover {
 	color: #ea1d53;
 }
 

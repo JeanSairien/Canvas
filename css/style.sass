@@ -133,95 +133,115 @@ main
 
     #deux
 
-        .container-canvas
-            position: relative
-            width: 600px
-            height: 600px
-            margin-top: 40px
+        .theory
+            display: flex
+            flex-direction: row
+            width: 100%
+            justify-content: space-between
 
-            canvas
-                border: 1px solid grey
-                box-shadow: 0 0 10px grey
-                margin: auto
-                position: absolute
-                top: 0
-                left: 0
+            pre, code
+                width: 600px
+                height: auto
 
-            .point
-                font-family: 'Helvetica', sans-serif
-                position: absolute
-                color: grey
+            #first_code
+                align-self: flex-start
+                margin-top: 40px
 
-            .x
-                top: -30px
-                right: -65px
+            .hidden-code
+                display: none
+                align-self: flex-start
+                margin-top: 40px
 
-            .x-trait
-                top: -15px
-                right: -80px
+            .container-canvas
+                position: relative
+                width: 300px
+                height: 300px
+                margin: 40px 0 100px 0
 
-            .y
-                bottom: -70px
-                left: -20px
+                canvas
+                    border: 1px solid grey
+                    box-shadow: 0 0 10px grey
+                    margin: auto
+                    position: absolute
+                    top: 0
+                    left: 0
 
-            .y-trait
-                transform: rotate(90deg)
-                bottom: -47px
-                left: -33px
+                .point
+                    font-family: 'Helvetica', sans-serif
+                    position: absolute
+                    color: grey
 
-            .zero
-                top: -20px
-                left: -20px
+                .x
+                    top: -30px
+                    right: -65px
 
-            .y-100
-                top: 93px
-                left: -40px
+                .x-trait
+                    top: -15px
+                    right: -80px
 
-            .y-200
-                top: 193px
-                left: -40px
+                .y
+                    bottom: -70px
+                    left: -20px
 
-            .y-300
-                top: 293px
-                left: -40px
+                .y-trait
+                    transform: rotate(90deg)
+                    bottom: -47px
+                    left: -33px
 
-            .y-400
-                top: 393px
-                left: -40px
+                .zero
+                    top: -20px
+                    left: -20px
 
-            .y-500
-                top: 493px
-                left: -40px
+                .y-100
+                    top: 93px
+                    left: -40px
 
-            .y-600
-                top: 593px
-                left: -40px
+                .y-200
+                    top: 193px
+                    left: -40px
 
-            .x-100
-                top: -30px
-                left: 88px
+                .y-300
+                    top: 293px
+                    left: -40px
 
-            .x-200
-                top: -30px
-                left: 188px
+                .y-400
+                    top: 393px
+                    left: -40px
 
-            .x-300
-                top: -30px
-                left: 288px
+                .y-500
+                    top: 493px
+                    left: -40px
 
-            .x-400
-                top: -30px
-                left: 388px
+                .y-600
+                    top: 593px
+                    left: -40px
 
-            .x-500
-                top: -30px
-                left: 488px
+                .x-100
+                    top: -30px
+                    left: 88px
 
-            .x-600
-                top: -30px
-                left: 588px
+                .x-200
+                    top: -30px
+                    left: 188px
 
-    #trois
+                .x-300
+                    top: -30px
+                    left: 288px
+
+                .x-400
+                    top: -30px
+                    left: 388px
+
+                .x-500
+                    top: -30px
+                    left: 488px
+
+                .x-600
+                    top: -30px
+                    left: 588px
+
+    #trois,
+    #quatre
         margin-top: 100px
 
         aside
@@ -250,6 +270,18 @@ main
 
             .carre-oualid
                 background-image: url(../pix/miniature-oualid.jpg)
+
+            .carre-cp1
+                background-image: url(../pix/cp1.jpg)
+
+            .carre-cp2
+                background-image: url(../pix/cp2.jpg)
+
+            .carre-cp3
+                background-image: url(../pix/cp3.jpg)
+
+            .carre-cp4
+                background-image: url(../pix/cp4.jpg)
 
             .carre-hover
                 display: none
