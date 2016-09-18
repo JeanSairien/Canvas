@@ -120,7 +120,6 @@ main
         flex-direction: column
         align-items: center
         text-align: justify
-        margin-bottom: 50px
         padding-top: 60px
 
         .elt-art1
@@ -222,66 +221,95 @@ main
                 top: -30px
                 left: 588px
 
-    #trois aside
-        display: flex
-        flex-direction: row
+    #trois
+        margin-top: 100px
 
-        .carre
-            width: 20vw
-            height: 20vw
-            background-color: grey
-            background-size: cover
-            margin: .5vw
-            position: relative
+        aside
+            display: flex
+            flex-direction: row
 
-            &:hover .carre-hover
-                display: flex
+            .carre
+                width: 20vw
+                height: 20vw
+                background-color: grey
+                background-size: cover
+                margin: .5vw
+                position: relative
 
-        .carre-romain
-            background-image: url(../pix/miniature-romain1.jpg)
+                &:hover .carre-hover
+                    display: flex
 
-        .carre-david
-            background-image: url(../pix/miniature-david1.jpg)
+            .carre-romain
+                background-image: url(../pix/miniature-romain1.jpg)
 
-        .carre-rama
-            background-image: url(../pix/miniature-rama1.jpg)
+            .carre-david
+                background-image: url(../pix/miniature-david1.jpg)
 
-        .carre-oualid
-            background-image: url(../pix/miniature-oualid.jpg)
+            .carre-rama
+                background-image: url(../pix/miniature-rama1.jpg)
 
-        .carre-hover
-            display: none
-            flex-direction: column
-            justify-content: center
-            align-items: center
-            font-size: 1.2em
-            color: white
-            width: 20vw
-            height: 20vw
-            position: absolute
-            top: 0
-            left: 0
-            background-color: transparent
-            box-shadow: 0 0 0 black
-            border: 1px solid black
-            transition: all .5s ease
-            box-sizing: border-box
+            .carre-oualid
+                background-image: url(../pix/miniature-oualid.jpg)
 
-            &:hover
-                background-color: rgba(0, 0, 0, 0.85)
-                box-shadow: 0 0 10px black
-
-            p
-                font-size: 0.8em
-
-            a
+            .carre-hover
+                display: none
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                font-size: 1.2em
                 color: white
-                margin-bottom: 5vw
+                width: 20vw
+                height: 20vw
+                position: absolute
+                top: 0
+                left: 0
+                background-color: transparent
+                box-shadow: 0 0 0 black
+                border: 1px solid black
+                transition: all .5s ease
+                box-sizing: border-box
 
                 &:hover
-                    color: $rose
+                    background-color: rgba(0, 0, 0, 0.85)
+                    box-shadow: 0 0 10px black
+
+                p
+                    font-size: 0.8em
+
+                a
+                    color: white
+                    margin-bottom: 5vw
+
+                    &:hover
+                        color: $rose
 
     #cinq
+        display: flex
+        align-items: flex-start
+        text-align: left
+        margin-bottom: 50px
+
+        p, a, div
+            margin: 5px
+            display: inline-flex
+            justify-content: space-between
+            font-family: 'Melbourne', sans-serif
+
+        div
+            margin: 0 5px
+
+            .first
+                margin: 5px 5px 5px 0
+
+            img
+                margin: auto
+                width: auto
+                height: .6em
+                align-self: center
 
         .my
             color: pink
+
+        a
+            border-bottom: 1px solid $rose
+            display: inline-flex

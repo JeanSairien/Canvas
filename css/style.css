@@ -132,7 +132,6 @@ main article {
 	flex-direction: column;
 	align-items: center;
 	text-align: justify;
-	margin-bottom: 50px;
 	padding-top: 60px;
 }
 
@@ -255,6 +254,10 @@ main #deux .container-canvas .x-600 {
 	left: 588px;
 }
 
+main #trois {
+	margin-top: 100px;
+}
+
 main #trois aside {
 	display: flex;
 	flex-direction: row;
@@ -326,6 +329,40 @@ main #trois aside .carre-hover a:hover {
 	color: #ea1d53;
 }
 
+main #cinq {
+	display: flex;
+	align-items: flex-start;
+	text-align: left;
+	margin-bottom: 50px;
+}
+
+main #cinq p, main #cinq a, main #cinq div {
+	margin: 5px;
+	display: inline-flex;
+	justify-content: space-between;
+	font-family: 'Melbourne', sans-serif;
+}
+
+main #cinq div {
+	margin: 0 5px;
+}
+
+main #cinq div .first {
+	margin: 5px 5px 5px 0;
+}
+
+main #cinq div img {
+	margin: auto;
+	width: auto;
+	height: .6em;
+	align-self: center;
+}
+
 main #cinq .my {
 	color: pink;
+}
+
+main #cinq a {
+	border-bottom: 1px solid #ea1d53;
+	display: inline-flex;
 }

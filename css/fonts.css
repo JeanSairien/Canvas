@@ -2,3 +2,7 @@
     font-family: 'Montserrat';
     src: url(fonts/Montserrat-Regular.otf);
 }
+@@font-face {
+    font-family: 'Melbourne';
+    src: url(fonts/Melbourne_reg.ttf);
+}
