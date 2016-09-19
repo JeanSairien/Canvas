@@ -122,14 +122,35 @@ main
         text-align: justify
         padding-top: 60px
 
+    #un
+
         .elt-art1
             margin: 20px 20px 40px 20px
 
-        .img-prez
+        .image
+            position: relative
             width: 125%
-            height: auto
-            border: 1px solid
-            box-shadow: 0 0 10px #000
+
+            .img-prez
+                width: 100%
+                height: auto
+                border: 1px solid
+                box-shadow: 0 0 10px #000
+
+        .elt-text
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            background-color: rgba($rose,0.8)
+            border-radius: 5px
+            padding: 20px
+            color: white
+            transition: all .5s ease
+
+            &:hover
+                background-color: white
+                color: $rose
 
     #deux
 

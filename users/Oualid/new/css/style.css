@@ -1,3 +1,5 @@
+@import '../../../../css/font-awesome-4.6.3/css/font-awesome.min.css';
+
 /*
     So you like the style of impress.js demo?
     Or maybe you are just curious how it was done?
@@ -195,6 +197,24 @@ canvas
     position: absolute;
     top: 340px;
     opacity: .5;
+}
+.back {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: #FFF;
+    font-size: 4em;
+    z-index: 9999;
+}
+
+.back:hover {
+    color: #ea1d53;
+}
+
+.back a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Helvetica', sans-serif
 }
 
 /*
