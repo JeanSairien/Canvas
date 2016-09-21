@@ -6,4 +6,4 @@ Lien de la maquette : [Site internet Canvas](https://dirago.github.io/Canvas/)
 
 Gestion du projet en mode Agile, gérée sur Trello.
 
-branch master is empty, the entire directory is on branch gh-pages
+the master branch is empty, entire directory is on gh-pages branch
