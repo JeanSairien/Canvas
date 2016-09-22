@@ -68,6 +68,10 @@ $(document).ready(function(){
         ctx.closePath();
         ctx.stroke();
         ctx.fill();
+    });
+    $('#third_code').click(function(){
+        $(this).hide();
+        $('#fourth_part').fadeIn('slow')
     })
 
 })

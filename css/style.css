@@ -157,6 +157,7 @@ main #un .elt-text {
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	background-color: rgba(234, 29, 83, 0.8);
+	border: 1px solid #afe3f0;
 	border-radius: 5px;
 	padding: 20px;
 	color: white;
@@ -170,25 +171,40 @@ main #un .elt-text:hover {
 
 main #deux .theory {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	justify-content: space-between;
 }
 
 main #deux .theory pre, main #deux .theory code {
-	width: 600px;
+	width: 650px;
 	height: auto;
-}
-
-main #deux .theory #first_code {
-	align-self: flex-start;
-	margin-top: 40px;
 }
 
 main #deux .theory .hidden-code {
 	display: none;
-	align-self: flex-start;
-	margin-top: 40px;
+}
+
+main #deux .theory #fourth_part {
+	display: none;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 0.3em;
+	width: 650px;
+	height: 100px;
+	background-color: #272822;
+	color: white;
+	font-family: Inconsolata, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+main #deux .theory #fourth_part .highlighted {
+	color: #ea1d53;
+}
+
+main #deux .theory #fourth_part a {
+	border-bottom: 1px solid #ea1d53;
 }
 
 main #deux .theory .container-canvas {
@@ -297,6 +313,15 @@ main #deux .theory .container-canvas .x-500 {
 main #deux .theory .container-canvas .x-600 {
 	top: -30px;
 	left: 588px;
+}
+
+main #deux .theory .container-canvas .clickme {
+	position: absolute;
+	bottom: -70px;
+	right: -190px;
+	width: 60%;
+	height: auto;
+	opacity: 0.2;
 }
 
 main #trois,
@@ -419,6 +444,7 @@ main #cinq p, main #cinq a, main #cinq div {
 	display: inline-flex;
 	justify-content: space-between;
 	font-family: 'Melbourne', sans-serif;
+	letter-spacing: 1px;
 }
 
 main #cinq div {
