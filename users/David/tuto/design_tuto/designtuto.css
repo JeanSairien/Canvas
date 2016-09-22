@@ -3,7 +3,7 @@ body {
 	font-family: "Helvetica", "Arial", sans-serif;
 	line-height: 1.5;
 	padding: 4em 1em;
-	font-family: cursive;
+	font-family: Roboto;
 	background-color: #272822;
 	color: #f8f8f2;
 	position: relative;
@@ -22,7 +22,7 @@ input {
 	border-radius: 8px;
 	font-style: oblique;
 	font-weight: bold;
-	font-family: cursive;
+	font-family: Roboto;
 	font-size: 18px;
 	color: #66d9ef;
 	cursor: pointer;
