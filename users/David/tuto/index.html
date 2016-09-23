@@ -40,6 +40,9 @@
                 <a href="#8">
                     <li class="animated fadeIn"><span class="navtext">A</span>rcs</li>
                 </a>
+                <a href="#9">
+                    <li class="animated fadeIn"><span class="navtext">C</span>ouleurs</li>
+                </a>
             </ul>
         </nav>
     </div>
@@ -333,10 +336,63 @@ var ctx = canvas.getContext("2d");
             <form action="http://codepen.io/DjAlbator/pen/RGoJxr" target="_blank">
                 <input type="submit" value="Vérifiez par vous même" />
             </form>
-            <p>
-                Avec toutes ces informations, vous devriez être en mesure de faire l'atelier qui vous est réservé.
-            </p>
+
+
+    <div id="9"><h2>Les Couleurs</h2></div>
+      <p>
+          Jusqu'à présent, nous avons seulement vu des méthodes du contexte de dessin.<br/>
+          Si nous voulons appliquer des couleurs à une forme, il y a deux propriétés importantes que nous pouvons utiliser: <span class="IT">fillStyle</span> et <span class="IT">strokeStyle</span> .
+        </p>
+
+        <p>
+          <span class="surlign">fillStyle = color : </span>
+            <br/>
+              Définit le style utilisé lors du remplissage de formes.<br/><br/>
+          <span class="surlign">strokeStyle = color :</span>
+            <br/>
+              Définit le style pour les contours des formes.
+        </p>
+        <p>
+          <span class="IT">Color</span> est une chaîne représentant un élément <span class="IT">CSS &lt;color&gt;</span>, d'un objet grandient ou d'un motif.
+          <br/>
+          Nous allons examiner le gradient et la structure des objets plus tard.
+          <br/>
+          Par défaut, la couleur de remplissage et de contour sont fixées en noir(valeur de couleur CSS color).
+        </p>
+        <p>
+          Dans cet exemple, nous utilisons une nouvelle fois deux boucles for pour dessiner une grille de rectangles, chacun dans une couleur différente.
+      <br/>    Il n'y a rien de spectaculaire ici. Nous utilisons les deux variables i et j pour générer une couleur RGB unique pour chaque carré, et seulement modifier les valeurs rouges et vertes.
+      <br/>    Le canal bleu a une valeur fixe. En modifiant les canaux, vous pouvez générer toutes sortes de palettes.
+      <br/>    En augmentant les étapes, vous pouvez obtenir quelque chose qui ressemble à des palettes de couleurs que Photoshop utilise.
+        </p>
+        <div class="ligneh">Partie html</div>
+        <pre class="language-html line-numbers"><code>&lt;html&gt;
+  &lt;body onload="draw();"&gt;
+    &lt;canvas id="canvas" width="150" heigth="150"&gt; &lt;/canvas&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        <div class="lignej">Partie javascript</div>
+        <pre class="language-javascript line-numbers"><code>function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+  for (var i=0;i<6;i++){
+    for (var j=0;j<6;j++){
+      ctx.fillStyle = 'rgb(' + Math.floor(255-42.5*i) + ',' +
+                       Math.floor(255-42.5*j) + ',0)';
+      ctx.fillRect(j*25,i*25,25,25);
+    }
+  }
+}
+</code></pre>
+<form action="http://codepen.io/DjAlbator/pen/rryVNq" target="_blank">
+    <input type="submit" value="Vérifiez par vous même" />
+</form>
+
+<p>
+  Avec ces informations vous devriez être en mesure de réaliser notre Atelier.
+</p>
     </div>
+
     <script type="text/javascript" src="couleur/coloration.js"></script>
     <a href="../../../index.html#trois"><i class="fa fa-angle-double-left back" aria-hidden="true"></i></a>
 </body>
