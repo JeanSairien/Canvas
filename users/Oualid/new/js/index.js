@@ -10,16 +10,16 @@ var c = document.getElementById('c'),
     circle = {
       x: (cw / 2) + 5,
       y: (ch / 2) + 22,
-      radius: 36,
-      speed: 60,
+      radius: 42,
+      speed: 40,
       rotation: 0,
       angleStart: 270,
       angleEnd: 90,
       hue: 200,
       thickness: 10,
-      blur: 9
-
+      blur: 9,
     },
+
     particles = [],
     particleMax = 100,
     updateCircle = function(){
@@ -149,6 +149,7 @@ gradient1.addColorStop(0, 'hsla('+circle.hue+', 10%, 2%, .5)');
 gradient1.addColorStop(1, 'hsla('+circle.hue+', 10%, 1%, 0)');
 
 var gradient2 = ctx.createLinearGradient(0, -circle.radius, 0, circle.radius);
+
 
 
 /* Loop It, Loop It Good */

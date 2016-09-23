@@ -54,7 +54,7 @@ function particule(){
             for(width = 1; width < bgCanvas.width; width += denseness){// tout disparait
                pixel = imageData.data[((width + (height * bgCanvas.width)) * 4) - 1];// 3 de texte , 4 un texte
                   //Pixel is black from being drawn on.
-                  if(pixel == 255) {// le texte disparait, limiter a 255 px s
+                  if(pixel == 255) {// le texte disparait, limiter a 255 px
                     drawCircle(width, height);// le texte disparait
       }
     }
@@ -72,7 +72,7 @@ function particule(){
 		var vely = (y - starty) / itertot;
 
     parts.push(
-			{c: '#' + (Math.random() * 012094 | 1).toString(16),// 18 filtre de couleur, si on change les opérations cela change les couleurs la division ne marche pas
+			{c: '#' + (Math.random() * 8461 | 2).toString(14),// 18 filtre de couleur, si on change les opérations cela change les couleurs la division ne marche pas
       /*{c: '#' + (Math.random() * 0x949494 + 0xaaaaaa | 0).toString(16),
       /*x: x, //goal position // plus de souris*/
       y: y,// aucune utilité*/
@@ -97,7 +97,7 @@ function particule(){
 			//Perhaps I should check if they are out of screen... and kill them?
 			}
       if (itercount == itertot){
-				parts[i].v = {x:(Math.random()*0.11),y:(Math.random()*0)};// parts[i].v = {x:(Math.random() + 5) + 2 - 1 , y:(Math.random() * 0) *  0};
+				parts[i].v = {x:(Math.random()* 2) * 0.1 - 0.2,y:(Math.random()*0.01)};// parts[i].v = {x:(Math.random() + 5) + 2 - 1 , y:(Math.random() * 0) *  0};
          // avec le math random de x qui est de 0 ou de 0.11 on peut manipuler grâàce à ce calcul un temps d'arrêt donné.
 				parts[i].r = true;// true pour faire exploser
 
