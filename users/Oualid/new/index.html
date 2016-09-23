@@ -18,26 +18,31 @@
     <script src="js/index.js"></script>
 
     <div id="impress">
-
-
         <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-            <q> DEFINITION  <strong>DE</strong> CANVAS</q> L'élément canvas est un composant HTML <strong>qui permet d'effectuer des</strong> rendus dynamiques d'images<strong> via des scripts.</strong> Déjà implémenté dans certains navigateurs, il fait
+            <q><strong> DEFINITION  DE CANVAS</strong></q> L'élément canvas est un composant HTML qui permet d'effectuer des rendus dynamiques d'images via des scripts. Déjà implémenté dans certains navigateurs, il fait
             parti de HTML5.</q>
         </div>
 
 
-        <div class="step slide" data-x="0" data-y="-1500">
-            <span class="try">Qu'est que c'est <h1>la balise CANVAS et quelle est son utilité ?</span>
-            <p>C'est un nouvel élément <strong>dans la partie HTML</strong> de notre navigateur (IE, Mozilla, Opera ou autres), qui peut être utilisé pour dessiner des <strong>éléments graphiques</strong> à l'aide de scripts (habituellement JavaScript).</p>
-            <p>Il permet par exemple de <strong>dessiner des graphiques,</strong> de réaliser des compositions de photographies ou des animations simples/complexes, pour présenter un produit ou une animation bien précise dans un site sans avoir besoin de
+      <div class="step slide" data-x="0" data-y="-1500">
+           <h1>Qu'est que c'est la balise CANVAS ?</h1>
+             <h1>Et quelle est son utilité ?</h1></br>
+              <p>C'est un nouvel élément dans la partie HTML de notre navigateur (IE, Mozilla, Opera ou autres), qui peut être utilisé pour dessiner des éléments graphiques à l'aide de scripts (habituellement JavaScript).</p></br>
+            <p>Il permet par exemple de dessiner des graphiques, de réaliser des compositions de photographies ou des animations simples/complexes, pour présenter un produit ou une animation bien précise dans un site sans avoir besoin de
                 logiciels bien spécifiques.</p>
         </div>
-
         <div class="step slide" data-x="1000" data-y="-1500">
-            <h1>CODE qu'on peut utiliser </h1>
-            <q>CSS canvas { border: 1px solid black;}</q>
-            <p>Avec on rajoute le JavaScript</p>
-            <img src=" image/12dex.jpg" />
+            <h1>CODE qu'on peut utiliser pour créer des rectangles :</h1>
+      <pre><code>
+    <u>Html</u>                                                                <u>Javascript</u></br>
+ &lsaquo;body&rsaquo;                                               ctx.fillStyle = 'blue';
+    &lsaquo;canvas id="canvas"&rsaquo;                               ctx.fillRect(10, 10, 100, 50);
+       &lsaquo;/body&rsaquo;
+
+<br>Avec on rajoute le <u>Css</u>:
+        CSS canvas {border: 1px solid black;}
+      </code></pre>
+            </br><img src=" image/12dex.jpg" />
         </div>
 
 
@@ -47,12 +52,11 @@
 
 
         <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-            <p>Pour faire simple le CANVAS a déjà été<strong> utilisé pour le dessin de la maison ( Ardoise Magique ).</strong> <br/> C'est pas très digeste dit comme ça, mais le CANVAS est une quantité de coordonnées X et Y.<br/>
-
+            <p>Pour faire simple le CANVAS a déjà été utilisé pour le dessin de la maison <strong>( Ardoise Magique )</strong>.<br/> C'est pas très digeste dit comme ça, mais le CANVAS est une quantité de coordonnées X et Y.<br/>
         </div>
 
         <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-            <p>Un exemple SIMPLE et FAMILIER : trait (0, 250, 650, 250, 'v'); rect (250, 180, 65, 70, 'b'); rect (271, 220, 20, 30, 'r'); rond (470, 100, 30, 'j'); trait (315 ,180, 280, 120, 'r'); trait (250 ,180, 280, 120, 'r')</p>
+            <h1>Un exemple SIMPLE et FAMILIER :</h1> <br><p>trait (0, 250, 650, 250, 'v'); rect (250, 180, 65, 70, 'b'); rect (271, 220, 20, 30, 'r'); rond (470, 100, 30, 'j'); trait (315 ,180, 280, 120, 'r'); trait (250 ,180, 280, 120, 'r')</br></p>
             <p style="margin: 30px 0">Et voila le résultat final</p>
             <img src=" image/house.jpg" />
         </div>
@@ -60,9 +64,9 @@
 
         <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
             <p>Et voici aussi ce qu'on peut faire avec la balise CANVAS</p>
-            <p>( exemple de haut niveau )</p>
-        </br>
-            <img src=" image/ball.jpg" style="height: 310px;" /></img>
+            <p>( exemple de haut niveau )</p></br>
+            <p>Cliquez sur l'image</p>
+            <a href="file:///C:/Users/Oualid/Downloads/Canvas-gh-pages%20Raph/users/Oualid/new/Canvas_pr%C3%A9sentation/index.html"><img src=" image/ball.jpg" style="height: 310px;" /></a>
         </div>
 
 
@@ -72,8 +76,8 @@
         </div>
 
         <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-            <p>Flash est-il mort ? <br>De nombreux parallèles avec la technologie Flash ont été réalisés et diffusés.</p>
-            <p>Cependant, la situation est plus complexe que cela, chaque technologie a ses avantages et inconvénients</p>
+            <h1>Flash est-il mort ?</h1> <br>De nombreux parallèles avec la technologie Flash ont été réalisés et diffusés.</p>
+            <p>Cependant, la situation est plus complexe que cela, chaque technologie a ses avantages et inconvénients.</p>
         </div>
 
         <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
@@ -88,7 +92,7 @@
 
 
         <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-            <p><span class="have">la</span> <span class="you">prochaine</span> <span class="noticed">fois</span> <span class="its">on</span> <span class="in">fera de la</span> <b>3D </b>?</p>
+            <p><span class="have">La</span> <span class="you">prochaine</span> <span class="noticed">fois</span> <span class="its">on</span> <span class="in">fera de la</span> <b>3D </b>?</p>
         </div>
 
         <div class="step retour" data-x="5700" data-y="5300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
@@ -97,9 +101,17 @@
 
         <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
         </div>
-
     </div>
 
+
+    <div class="hint">
+        <p>Utiliser la barre d'espace ou les flèches pour naviguer</p>
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Utiliser la barre d'espace ou les flèches pour naviguer</p>";
+    }
+    </script>
     <script src="js/impress.js"></script>
     <script>
         impress().init();

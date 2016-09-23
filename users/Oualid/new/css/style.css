@@ -1,34 +1,5 @@
 @import '../../../../css/font-awesome-4.6.3/css/font-awesome.min.css';
 
-/*
-    So you like the style of impress.js demo?
-    Or maybe you are just curious how it was done?
-
-    You couldn't find a better place to find out!
-
-    Welcome to the stylesheet impress.js demo presentation.
-
-    Please remember that it is not meant to be a part of impress.js and is
-    not required by impress.js.
-    I expect that anyone creating a presentation for impress.js would create
-    their own set of styles.
-
-    But feel free to read through it and learn how to get the most of what
-    impress.js provides.
-
-    And let me be your guide.
-
-    Shall we begin?
-*/
-
-
-/*
-    We start with a good ol' reset.
-    That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
-
-    You can probably argue if it is needed here, or not, but for sure it
-    doesn't do any harm and gives us a fresh start.
-*/
 
 html,
 body,
@@ -114,16 +85,11 @@ video
 {
     font: inherit;
     font-size: 100%;
-
     margin: 0;
     padding: 0;
-
     vertical-align: baseline;
-
     border: 0;
 }
-
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -166,22 +132,12 @@ table
     border-spacing: 0;
     border-collapse: collapse;
 }
-
-/*
-    Now here is when interesting things start to appear.
-
-    We set up <body> styles with default font and nice gradient in the background.
-    And yes, there is a lot of repetition there because of -prefixes but we don't
-    want to leave anybody behind.
-*/
 body
 {
     font-family: 'PT Sans', sans-serif;
-
     min-height: 740px;
     margin-top: 325px;
     margin-left: 397px;
-
     opacity: 1;
     background: url('http://80.67.190.139/oualid%20simplon/image/future-technology-android-wallpaper.jpg');
 }
@@ -189,14 +145,14 @@ img
 {
     display: block;
     float: left;
-
-    margin: 0 1px 0 0;
+    margin-top: -21px;
 }
 canvas
 {
-    position: absolute;
-    top: 340px;
-    opacity: .5;
+  display: block;
+  float: left;
+  position: absolute;
+  opacity: 1;
 }
 .back {
     position: absolute;
@@ -216,10 +172,6 @@ canvas
     color: white;
     font-family: 'Helvetica', sans-serif
 }
-
-/*
-    Now let's bring some text styles back ...
-*/
 b,
 strong
 {
@@ -238,7 +190,6 @@ a
 {
     padding: 5px;
     text-decoration: none;
-
     color: inherit;
 }
 
@@ -283,50 +234,32 @@ a:focus
 {
     display: none;
 }
-
-/*
-    Now let's style the presentation steps.
-
-    We start with basics to make sure it displays correctly in everywhere ...
-*/
-
 .step
 {
     font-family: 'PT Serif', georgia, serif;
     font-size: 48px;
     line-height: 1.5;
-
     position: relative;
-
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     width: 900px;
     margin: 20px auto;
     padding: 40px;
-
     border-radius: 10px;
     background-color: rgba(0, 56, 90, .85);
-
-        -ms-box-sizing: border-box;
-         -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    text-shadow: 0 6px 4px black;
 }
-
-/*
-    ... and we enhance the styles for impress.js.
-
-    Basically we remove the margin and make inactive steps a little bit transparent.
-*/
 .impress-enabled .step
 {
     margin: 0;
-
     -webkit-transition: opacity 1s;
        -moz-transition: opacity 1s;
         -ms-transition: opacity 1s;
          -o-transition: opacity 1s;
             transition: opacity 1s;
-
     opacity: .3;
 }
 
@@ -334,22 +267,16 @@ a:focus
 {
     opacity: 1;
 }
-
-
 .slide
 {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
-
     display: block;
-
     width: 900px;
     height: 700px;
     padding: 40px 60px;
-
     letter-spacing: -1px;
-
     opacity: 1;
     color: white;
     border-radius: 10px;
@@ -361,28 +288,13 @@ a:focus
 {
     font-size: 50px;
     line-height: 72px;
-
     display: block;
-
     margin-top: 100px;
 }
-
 .slide q strong
 {
     white-space: nowrap;
 }
-
-/*
-    And now we start to style each step separately.
-
-    I agree that this may be not the most efficient, object-oriented and
-    scalable way of styling, but most of steps have quite a custom look
-    and typography tricks here and there, so they had to be styled separately.
-
-    First is the title step with a big <h1> (no room for padding) and some
-    3D positioning along Z axis.
-*/
-
 #title
 {
     padding: 40px;
@@ -391,107 +303,74 @@ a:focus
 #title .try
 {
     font-size: 64px;
-
     position: absolute;
     top: -3em;
     left: 1.5em;
-
     -webkit-transform: translateZ(20px);
-       -moz-transform: translateZ(20px);
-        -ms-transform: translateZ(20px);
-         -o-transform: translateZ(20px);
-            transform: translateZ(20px);
-
+    -moz-transform: translateZ(20px);
+    -ms-transform: translateZ(20px);
+    -o-transform: translateZ(20px);
+    transform: translateZ(20px);
     border-radius: 10px;
     background-color: rgba(0, 56, 90, .85);
     text-shadow: 0 3px 5px #020202;
 }
-
-#title h1
+#title h
 {
     font-size: 190px;
-
     -webkit-transform: translateZ(50px);
        -moz-transform: translateZ(50px);
         -ms-transform: translateZ(50px);
          -o-transform: translateZ(50px);
             transform: translateZ(50px);
 }
-
+h1{
+  font-size: 30px;
+  font-weight : bold;
+}
+h2{
+  font-size: 40px;
+  font-weight : bold;
+}
 #title .footnote
 {
     font-size: 32px;
 }
-
-/*
-    Second step is nothing special, just a text with a link, so it doesn't need
-    any special styling.
-
-    Let's move to 'big thoughts' with centered text and custom font sizes.
-*/
 #big
 {
     font-size: 20px;
     line-height: 1;
-
     z-index: 1;
-
     width: 681px;
     height: 518px;
-
     text-align: center;
-
     border-radius: 10px;
 }
-
 #big b
 {
     font-size: 20px;
     line-height: 250px;
-
     display: block;
 }
-
-#big .thoughts
+#big.thoughts
 {
     font-size: 20px;
     line-height: 150px;
 }
-
-/*
-    'Tiny ideas' just need some tiny styling.
-*/
 #tiny
 {
     width: 753px;
-
     text-align: center;
 }
-
-/*
-    This step has some animated text ...
-*/
-
-
-/*
-    ... so we define display to `inline-block` to enable transforms and
-    transition duration to 0.5s ...
-*/
 #ing b
 {
     display: inline-block;
-
     -webkit-transition: .5s;
        -moz-transition: .5s;
         -ms-transition: .5s;
          -o-transition: .5s;
             transition: .5s;
 }
-
-/*
-    ... and we want 'positioning` word to move up a bit when the step gets
-    `present` class ...
-*/
 #ing.present .positioning
 {
     -webkit-transform: translateY(-10px);
@@ -500,10 +379,6 @@ a:focus
          -o-transform: translateY(-10px);
             transform: translateY(-10px);
 }
-
-/*
-    ... 'rotating' to rotate a quarter of a second later ...
-*/
 #ing.present .rotating
 {
     -webkit-transition-delay: .25s;
@@ -517,10 +392,6 @@ a:focus
          -o-transform: rotate(-10deg);
             transform: rotate(-10deg);
 }
-
-/*
-    ... and 'scaling' to scale down after another quarter of a second.
-*/
 #ing.present .scaling
 {
     -webkit-transition-delay: .5s;
@@ -534,17 +405,10 @@ a:focus
          -o-transform: scale(.7);
             transform: scale(.7);
 }
-
-/*
-    The 'imagination' step is again some boring font-sizing.
-*/
-
 #imagination
 {
     font-size: 30px;
-
     width: 805px;
-
     border-radius: 10px;
     background-color: rgba(0, 56, 90, .85);
 }
@@ -553,17 +417,6 @@ a:focus
 {
     font-size: 78px;
 }
-
-/*
-    There is nothing really special about 'use the source, Luke' step, too,
-    except maybe of the Yoda background.
-
-    As you can see below I've 'hard-coded' it in data URL.
-    That's not the best way to serve images, but because that's just this one
-    I decided it will be OK to have it this way.
-
-    Just make sure you don't blindly copy this approach.
-*/
 #source
 {
     border-radius: 38px;
@@ -575,30 +428,14 @@ a:focus
 {
     font-size: 60px;
 }
-
-/*
-    And the "it's in 3D" step again brings some 3D typography - just for fun.
-
-    Because we want to position <span> elements in 3D we set transform-style to
-    `preserve-3d` on the paragraph.
-    It is not needed by webkit browsers, but it is in Firefox. It's hard to say
-    which behaviour is correct as 3D transforms spec is not very clear about it.
-*/
 #its-in-3d p
 {
     -webkit-transform-style: preserve-3d;
-       -moz-transform-style: preserve-3d; /* Y U need this Firefox?! */
+       -moz-transform-style: preserve-3d;
         -ms-transform-style: preserve-3d;
          -o-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
-
-/*
-    Below we position each word separately along Z axis and we want it to transition
-    to default position in 0.5s when the step gets `present` class.
-
-    Quite a simple idea, but lot's of styles and prefixes.
-*/
 #its-in-3d span,
 #its-in-3d b
 {
@@ -681,94 +518,22 @@ a:focus
          -o-transform: translateZ(0px);
             transform: translateZ(0px);
 }
-
-/*
-    The last step is an overview.
-    There is no content in it, so we make sure it's not visible because we want
-    to be able to click on other steps.
-
-*/
 #overview
 {
     display: none;
 }
-
-/*
-    We also make other steps visible and give them a pointer cursor using the
-    `impress-on-` class.
-*/
 .impress-on-overview .step
 {
     cursor: pointer;
 
     opacity: 0;
 }
-
-
-/*
-    Now, when we have all the steps styled let's give users a hint how to navigate
-    around the presentation.
-
-    The best way to do this would be to use JavaScript, show a delayed hint for a
-    first time users, then hide it and store a status in cookie or localStorage...
-
-    But I wanted to have some CSS fun and avoid additional scripting...
-
-    Let me explain it first, so maybe the transition magic will be more readable
-    when you read the code.
-
-    First of all I wanted the hint to appear only when user is idle for a while.
-    You can't detect the 'idle' state in CSS, but I delayed a appearing of the
-    hint by 5s using transition-delay.
-
-    You also can't detect in CSS if the user is a first-time visitor, so I had to
-    make an assumption that I'll only show the hint on the first step. And when
-    the step is changed hide the hint, because I can assume that user already
-    knows how to navigate.
-
-    To summarize it - hint is shown when the user is on the first step for longer
-    than 5 seconds.
-
-    The other problem I had was caused by the fact that I wanted the hint to fade
-    in and out. It can be easily achieved by transitioning the opacity property.
-    But that also meant that the hint was always on the screen, even if totally
-    transparent. It covered part of the screen and you couldn't correctly clicked
-    through it.
-    Unfortunately you cannot transition between display `block` and `none` in pure
-    CSS, so I needed a way to not only fade out the hint but also move it out of
-    the screen.
-
-    I solved this problem by positioning the hint below the bottom of the screen
-    with CSS transform and moving it up to show it. But I also didn't want this move
-    to be visible. I wanted the hint only to fade in and out visually, so I delayed
-    the fade in transition, so it starts when the hint is already in its correct
-    position on the screen.
-
-    I know, it sounds complicated ... maybe it would be easier with the code?
-*/
-
-
-
-/*
-    Now we 'enable' the hint when presentation is initialized ...
-*/
 .impress-enabled .hint
 {
     display: block;
 }
-
-/*
-    ... and we will show it when the first step (with id 'bored') is active.
-*/
 .impress-on-bored .hint
 {
-    /*
-        Now for fade in transition we have the oposite situation from the one
-        above.
-        First after 4.5s delay we animate the transform property to move the hint
-        into its correct position and after that we fade it in with opacity
-        transition.
-    */
     -webkit-transition: opacity 1s 5s, -webkit-transform .5s 4.5s;
        -moz-transition: opacity 1s 5s,    -moz-transform .5s 4.5s;
         -ms-transition: opacity 1s 5s,     -ms-transform .5s 4.5s;
@@ -779,35 +544,8 @@ a:focus
         -ms-transform: translateY(0px);
          -o-transform: translateY(0px);
             transform: translateY(0px);
-    /*
-        We remove the transparency and position the hint in its default fixed
-        position.
-    */
-
     opacity: 1;
 }
-
-/*
-    And as the last thing there is a workaround for quite strange bug.
-    It happens a lot in Chrome. I don't remember if I've seen it in Firefox.
-
-    Sometimes the element positioned in 3D (especially when it's moved back
-    along Z axis) is not clickable, because it falls 'behind' the <body>
-    element.
-
-    To prevent this, I decided to make <body> non clickable by setting
-    pointer-events property to `none` value.
-    Value if this property is inherited, so to make everything else clickable
-    I bring it back on the #impress element.
-
-    If you want to know more about `pointer-events` here are some docs:
-    https://developer.mozilla.org/en/CSS/pointer-events
-
-    There is one very important thing to notice about this workaround - it makes
-    everything 'unclickable' except what's in #impress element.
-
-    So use it wisely ... or don't use at all.
-*/
 .impress-enabled
 {
     color: white;
@@ -816,26 +554,44 @@ a:focus
 {
     pointer-events: auto;
 }
-
-/*
-    There is one funny thing I just realized.
-
-    Thanks to this workaround above everything except #impress element is invisible
-    for click events. That means that the hint element is also not clickable.
-    So basically all of this transforms and delayed transitions trickery was probably
-    not needed at all...
-
-    But it was fun to learn about it, wasn't it?
-*/
-
-/*
-    That's all I have for you in this file.
-    Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
-    for you.
-*/
-
-/* rajout d'une classe pour intégration - raph */
-
 .retour {
     text-align: center
+}
+.impress-on-bored .hint {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
+    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+}
+.impress-enabled .hint { display: block }
+.hint {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    background: rgba(0,0,0,0.5);
+    color: #EEE;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    z-index: 100;
+    opacity: 0;
+    -webkit-transform: translateY(400px);
+    -moz-transform:    translateY(400px);
+    -ms-transform:     translateY(400px);
+    -o-transform:      translateY(400px);
+    transform:         translateY(400px);
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
 }
