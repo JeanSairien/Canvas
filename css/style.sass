@@ -9,9 +9,68 @@ $gris: #cdcdcd
   @each $prefix in -webkit-, -moz-, -ms-, -o-, ""
     #{$prefix}#{$property}: $parameters
 
+svg
+    overflow: visible
+
 .container
     width: 80%
     margin: auto
+
+.landing
+    width: 100vw
+    height: 100vh
+
+    .landing-logo
+        width: auto
+        height: 30vh
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translateY(-50%) translateX(-50%)
+        animation-duration: 5s
+
+        .st0
+            fill: #d9234f
+        .st1
+            fill: #fff
+        .st2
+            fill: #ee5d84
+
+    .landing-text
+        height: 10vh
+        width: auto
+        top: 20vh
+        left: 50%
+        transform: translateX(-50%)
+        position: absolute
+
+        .anim-text
+            animation-delay: 2s
+
+    .landing-names
+        width: 80vw
+        top: 70vh
+        left: 50%
+        transform: translateX(-50%)
+        position: absolute
+
+        .landing-david
+            animation-delay: 5s
+
+        .landing-oualid
+            animation-delay: 2.5s
+
+        .landing-rama
+            animation-delay: 6s
+
+        .landing-romain
+            animation-delay: 5.5s
+
+        .landing-raphael
+            animation-delay: 4s
+
+a
+    cursor: crosshair
 
 header
     display: flex
@@ -51,7 +110,7 @@ header
             transition: all .5s ease
 
         .canvas-logo-sm
-            width: 49px !important
+            width: 49px
 
         nav
             margin-right: 5vw
@@ -69,7 +128,6 @@ header
                     color: black
                     padding-left: 20px
                     padding-right: 20px
-                    cursor: crosshair
                     height: 50px
                     line-height: 50px
                     margin-top: 30px
@@ -166,6 +224,7 @@ main
             pre, code
                 width: 650px
                 height: auto
+                cursor: crosshair
 
             .hidden-code
                 display: none
@@ -389,3 +448,12 @@ main
         a
             border-bottom: 1px solid $rose
             display: inline-flex
+
+// @media screen and (max-width: 700px)
+//     .landing
+//         width: 100vw
+//         height: 100vh
+//
+//         .landing-logo
+//             width: 40vw
+//             height: auto

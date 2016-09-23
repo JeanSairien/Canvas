@@ -2,9 +2,85 @@
 @import url(fonts.css);
 @import url(font-awesome-4.6.3/css/font-awesome.min.css);
 @import url(generic.css);
+svg {
+	overflow: visible;
+}
+
 .container {
 	width: 80%;
 	margin: auto;
+}
+
+.landing {
+	width: 100vw;
+	height: 100vh;
+}
+
+.landing .landing-logo {
+	width: auto;
+	height: 30vh;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	animation-duration: 5s;
+}
+
+.landing .landing-logo .st0 {
+	fill: #d9234f;
+}
+
+.landing .landing-logo .st1 {
+	fill: #fff;
+}
+
+.landing .landing-logo .st2 {
+	fill: #ee5d84;
+}
+
+.landing .landing-text {
+	height: 10vh;
+	width: auto;
+	top: 20vh;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+.landing .landing-text .anim-text {
+	animation-delay: 2s;
+}
+
+.landing .landing-names {
+	width: 80vw;
+	top: 70vh;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+.landing .landing-names .landing-david {
+	animation-delay: 5s;
+}
+
+.landing .landing-names .landing-oualid {
+	animation-delay: 2.5s;
+}
+
+.landing .landing-names .landing-rama {
+	animation-delay: 6s;
+}
+
+.landing .landing-names .landing-romain {
+	animation-delay: 5.5s;
+}
+
+.landing .landing-names .landing-raphael {
+	animation-delay: 4s;
+}
+
+a {
+	cursor: crosshair;
 }
 
 header {
@@ -49,7 +125,7 @@ header #header .canvas-logo {
 }
 
 header #header .canvas-logo-sm {
-	width: 49px !important;
+	width: 49px;
 }
 
 header #header nav {
@@ -70,7 +146,6 @@ header #header nav ul .nav-link {
 	color: black;
 	padding-left: 20px;
 	padding-right: 20px;
-	cursor: crosshair;
 	height: 50px;
 	line-height: 50px;
 	margin-top: 30px;
@@ -181,6 +256,7 @@ main #deux .theory {
 main #deux .theory pre, main #deux .theory code {
 	width: 650px;
 	height: auto;
+	cursor: crosshair;
 }
 
 main #deux .theory .hidden-code {
