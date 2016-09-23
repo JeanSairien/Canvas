@@ -332,6 +332,11 @@
             </nav>
         </div>
     </header>
+    <div class="modal">
+        <div class="modal-content">
+            <i class="fa fa-times btn-close" aria-hidden="true"></i>
+        </div>
+    </div>
     <main class="container">
         <article id="un">
             <h1 class="elt-art1">Qu'est-ce que le Canvas ?</h1>
@@ -388,11 +393,21 @@
                     ctx.stroke();
                     ctx.fill();
                 </code></pre>
-                <div id="fourth_part">Vous en voulez <span class="highlighted">plus</span> ? Découvrez notre tuto <a href="users/David/tuto/index.html" class="">complet</div>
+                <div id="fourth_part">Vous en voulez <span class="highlighted">plus</span> ? Découvrez notre tuto <a href="users/David/tuto/index.html">complet</a></div>
             </aside>
         </article>
         <article id="trois">
             <h1>Nos réalisations</h1>
+            <aside>
+                <div class="apercu-container">
+                    <img id="apercu_romain" class="apercu" src="pix/apercu_romain.jpg" alt="" />
+                    <i id="apercu_romain_plus" class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                <div class="apercu-container">
+                    <img id="apercu_raph" class="apercu" src="pix/apercu_raph.jpg" alt="" />
+                    <i id="apercu_raph_plus" class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </aside>
             <aside>
                 <!-- carré jeu de Romain -->
                 <div class="carre carre-romain">
@@ -477,6 +492,7 @@
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="js/landing-page.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

@@ -8,8 +8,8 @@ $(document).ready(function(){
         $main.hide();
         function launchWebsite(){
             $landing.fadeOut('slow');
-            $header.show()
-            $main.show()
+            $header.fadeIn('slow')
+            $main.fadeIn('slow')
         }
         setTimeout(launchWebsite, 8000);
 
