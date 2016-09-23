@@ -1,34 +1,6 @@
-/**
- * impress.js
- *
- * impress.js is a presentation tool based on the power of CSS3 transforms and transitions
- * in modern browsers and inspired by the idea behind prezi.com.
- *
- *
- * Copyright 2011-2012 Bartek Szopka (@bartaz)
- *
- * Released under the MIT and GPL Licenses.
- *
- * ------------------------------------------------
- *  author:  Bartek Szopka
- *  version: 0.5.3
- *  url:     http://bartaz.github.com/impress.js/
- *  source:  http://github.com/bartaz/impress.js/
- */
 
-/*jshint bitwise:true, curly:true, eqeqeq:true, forin:true, latedef:true, newcap:true,
-         noarg:true, noempty:true, undef:true, strict:true, browser:true */
-
-// You are one of those who like to know how things work inside?
-// Let me show you the cogs that make impress.js run...
 ( function( document, window ) {
     "use strict";
-
-    // HELPER FUNCTIONS
-
-    // `pfx` is a function that takes a standard CSS property name as a parameter
-    // and returns it's prefixed version valid for current browser it runs in.
-    // The code is heavily inspired by Modernizr http://www.modernizr.com/
     var pfx = ( function() {
 
         var style = document.createElement( "dummy" ).style,
@@ -48,23 +20,13 @@
                         break;
                     }
                 }
-
             }
-
             return memory[ prop ];
         };
-
     } )();
-
-    // `arraify` takes an array-like object and turns it into real Array
-    // to make all the Array.prototype goodness available.
     var arrayify = function( a ) {
         return [].slice.call( a );
     };
-
-    // `css` function applies the styles given in `props` object to the element
-    // given as `el`. It runs all property names through `pfx` function to make
-    // sure proper prefixed version of the property is used.
     var css = function( el, props ) {
         var key, pkey;
         for ( key in props ) {
@@ -77,15 +39,9 @@
         }
         return el;
     };
-
-    // `toNumber` takes a value given as `numeric` parameter and tries to turn
-    // it into a number. If it is not possible it returns 0 (or other value
-    // given as `fallback`).
     var toNumber = function( numeric, fallback ) {
         return isNaN( numeric ) ? ( fallback || 0 ) : Number( numeric );
     };
-
-    // `byId` returns element with given `id` - you probably have guessed that ;)
     var byId = function( id ) {
         return document.getElementById( id );
     };
@@ -709,23 +665,7 @@
                ( event.keyCode >= 37 && event.keyCode <= 40 ) ) {
                 event.preventDefault();
             }
-        }, false );
-
-        // Trigger impress action (next or prev) on keyup.
-
-        // Supported keys are:
-        // [space] - quite common in presentation software to move forward
-        // [up] [right] / [down] [left] - again common and natural addition,
-        // [pgdown] / [pgup] - often triggered by remote controllers,
-        // [tab] - this one is quite controversial, but the reason it ended up on
-        //   this list is quite an interesting story... Remember that strange part
-        //   in the impress.js code where window is scrolled to 0,0 on every presentation
-        //   step, because sometimes browser scrolls viewport because of the focused element?
-        //   Well, the [tab] key by default navigates around focusable elements, so clicking
-        //   it very often caused scrolling to focused element and breaking impress.js
-        //   positioning. I didn't want to just prevent this default action, so I used [tab]
-        //   as another way to moving to next step... And yes, I know that for the sake of
-        //   consistency I should add [shift+tab] as opposite action...
+        }, false ); 
         document.addEventListener( "keyup", function( event ) {
 
             if ( event.shiftKey || event.altKey || event.ctrlKey || event.metaKey ) {
@@ -753,12 +693,7 @@
                 event.preventDefault();
             }
         }, false );
-
-        // Delegated handler for clicking on the links to presentation steps
         document.addEventListener( "click", function( event ) {
-
-            // Event delegation with "bubbling"
-            // Check if event target (or any of its parents is a link)
             var target = event.target;
             while ( ( target.tagName !== "A" ) &&
                     ( target !== document.documentElement ) ) {
@@ -767,8 +702,6 @@
 
             if ( target.tagName === "A" ) {
                 var href = target.getAttribute( "href" );
-
-                // If it's a link to presentation step, target this step
                 if ( href && href[ 0 ] === "#" ) {
                     target = document.getElementById( href.slice( 1 ) );
                 }
@@ -779,12 +712,8 @@
                 event.preventDefault();
             }
         }, false );
-
-        // Delegated handler for clicking on step elements
         document.addEventListener( "click", function( event ) {
             var target = event.target;
-
-            // Find closest step element that is not active
             while ( !( target.classList.contains( "step" ) &&
                       !target.classList.contains( "active" ) ) &&
                       ( target !== document.documentElement ) ) {
@@ -795,9 +724,6 @@
                 event.preventDefault();
             }
         }, false );
-
-        // Touch handler to detect taps on the left and right side of the screen
-        // based on awesome work of @hakimel: https://github.com/hakimel/reveal.js
         document.addEventListener( "touchstart", function( event ) {
             if ( event.touches.length === 1 ) {
                 var x = event.touches[ 0 ].clientX,
@@ -815,22 +741,10 @@
                 }
             }
         }, false );
-
-        // Rescale presentation when window is resized
         window.addEventListener( "resize", throttle( function() {
-
-            // Force going to active step again, to trigger rescaling
             api.goto( document.querySelector( ".step.active" ), 500 );
         }, 250 ), false );
 
     }, false );
 
 } )( document, window );
-
-// THAT'S ALL FOLKS!
-//
-// Thanks for reading it all.
-// Or thanks for scrolling down and reading the last part.
-//
-// I've learnt a lot when building impress.js and I hope this code and comments
-// will help somebody learn at least some part of it.
