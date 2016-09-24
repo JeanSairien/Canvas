@@ -154,7 +154,6 @@ header #header {
 header #header #logo_stretch {
 	width: 10vw;
 	height: auto;
-	display: block;
 	position: absolute;
 	top: 50%;
 	left: 2%;
@@ -250,12 +249,8 @@ main article {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: justify;
+	text-align: center;
 	padding-top: 60px;
-}
-
-main #un .elt-art1 {
-	margin: 20px 20px 40px 20px;
 }
 
 main #un .image {
@@ -278,7 +273,8 @@ main #un .elt-text {
 	background-color: rgba(234, 29, 83, 0.8);
 	border: 1px solid #afe3f0;
 	border-radius: 5px;
-	padding: 20px;
+	padding: 1vw;
+	font-size: 1em;
 	color: white;
 	transition: all .5s ease;
 }
@@ -630,4 +626,50 @@ main #cinq .my {
 main #cinq a {
 	border-bottom: 1px solid #ea1d53;
 	display: inline-flex;
+}
+
+@media screen and (max-width: 700px) {
+	.canvas-logo,
+	#logo_stretch,
+	.carre-hover {
+		display: none;
+	}
+	header #header nav {
+		margin: 0;
+	}
+	header #header nav ul {
+		padding: 0;
+	}
+	header #header nav ul .nav-link {
+		font-size: 3vw;
+	}
+	main #deux .theory pre, main #deux .theory code, main #deux .theory #fourth_part {
+		margin: 2vh 0;
+		width: 80vw;
+		font-size: 2vw;
+	}
+	main #deux .theory .container-canvas .clickme {
+		bottom: -106px;
+		right: 57px;
+		width: 50%;
+	}
+	main #trois aside, main #quatre aside {
+		flex-direction: column;
+	}
+	main #trois aside .carre, main #quatre aside .carre {
+		width: 80vw;
+		height: 80vw;
+		margin: 0 0 2vh 0;
+	}
+	main #trois aside .carre:hover .carre-hover, main #quatre aside .carre:hover .carre-hover {
+		display: none;
+	}
+	main #trois aside .apercu-container .apercu, main #quatre aside .apercu-container .apercu {
+		width: 80vw;
+		height: auto;
+	}
+	main #cinq a {
+		border-bottom: 0;
+		text-decoration: underline;
+	}
 }

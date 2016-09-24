@@ -1,4 +1,5 @@
 @import '../../../css/font-awesome-4.6.3/css/font-awesome.min.css'
+@import '../../../css/prism.css'
 
 body
   margin: 0 auto
@@ -16,9 +17,15 @@ body
     color: #ea1d53
 
 #container
-  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
   #monCanvas
     border: 2px solid black
     width: 1000px
     height: 600px
-    margin-top: 5vh
+    margin: 5vh 0
+  pre,
+  code
+    width: 60%

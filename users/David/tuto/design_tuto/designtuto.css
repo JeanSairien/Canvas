@@ -3,7 +3,7 @@ body {
 	font-family: "Helvetica", "Arial", sans-serif;
 	line-height: 1.5;
 	padding: 4em 1em;
-	font-family: Roboto;
+	font-family: "Roboto", sans-serif;
 	background-color: #272822;
 	color: #f8f8f2;
 	position: relative;
@@ -22,7 +22,7 @@ input {
 	border-radius: 8px;
 	font-style: oblique;
 	font-weight: bold;
-	font-family: Roboto;
+	font-family: "Roboto", sans-serif;
 	font-size: 18px;
 	color: #66d9ef;
 	cursor: pointer;
@@ -103,10 +103,16 @@ h4 {
 	color: #272822;
 }
 
-.back {
+#back {
 	position: fixed;
 	top: 20px;
 	left: 30px;
 	color: #f2e4fd;
-	font-size: 12px;
+	font-size: 3vw;
+}
+
+@media screen and (max-width: 700px) {
+	#back {
+		font-size: 5vw;
+	}
 }

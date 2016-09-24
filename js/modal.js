@@ -6,7 +6,7 @@ $(document).ready(function(){
         });
         $('.modal').fadeIn();
         if ($id === "apercu_romain" || $id == "apercu_romain_plus") {
-            $('.modal-content').append("<img class='img' src='../pix/dessin_romain.jpg' alt='aperçu canvas'><a href='../users/Romain/Ma_realisation_canvas/index.html'>Voir le canvas</a>");
+            $('.modal-content').append("<img class='img' src='../pix/dessin_romain.jpg' alt='aperçu canvas'><a href='../users/Romain/Ma_realisation_canvas/index.html'>Voir le canvas de Romain</a>");
         } else if ($id === "apercu_raph" || $id === "apercu_raph_plus") {
             $('.modal-content').append("<img class='img' src='../pix/dessin_raph.jpg' alt='aperçu canvas'><a id='btn-grille' style='cursor:crosshair'>Afficher la grille</a>");
             $('#btn-grille').click(function(){
