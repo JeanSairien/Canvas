@@ -11,7 +11,7 @@ $(document).ready(function(){
             $header.fadeIn('slow')
             $main.fadeIn('slow')
         }
-        setTimeout(launchWebsite, 8000);
+        setTimeout(launchWebsite, 9000);
 
     } else {
         $landing.hide();

@@ -60,23 +60,23 @@ svg {
 }
 
 .landing .landing-names .landing-david {
-	animation-delay: 5s;
+	animation-delay: 3.5s;
 }
 
 .landing .landing-names .landing-oualid {
-	animation-delay: 2.5s;
+	animation-delay: 4.5s;
 }
 
 .landing .landing-names .landing-rama {
-	animation-delay: 6s;
-}
-
-.landing .landing-names .landing-romain {
 	animation-delay: 5.5s;
 }
 
+.landing .landing-names .landing-romain {
+	animation-delay: 4.5s;
+}
+
 .landing .landing-names .landing-raphael {
-	animation-delay: 4s;
+	animation-delay: 3.5s;
 }
 
 a {
@@ -97,7 +97,7 @@ a {
 .modal .modal-content {
 	background-color: white;
 	width: 60vw;
-	height: 50vh;
+	height: 80vh;
 	position: absolute;
 	border-radius: 10px;
 	top: 50%;
@@ -105,6 +105,7 @@ a {
 	transform: translateX(-50%) translateY(-50%);
 	padding: 1vw;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
@@ -120,9 +121,10 @@ a {
 	cursor: pointer;
 }
 
-.modal img {
-	width: 100%;
-	height: auto;
+.modal .modal-content .img {
+	margin: 1em 0;
+	max-height: 80%;
+	max-width: 80%;
 }
 
 header {

@@ -1,1 +1,1 @@
-body{margin:0 auto;padding:0}#container{text-align:center}#container #monCanvas{border:2px solid black;width:1000px;height:600px;margin-top:5vh}
+@import url(../../../css/font-awesome-4.6.3/css/font-awesome.min.css);body{margin:0 auto;padding:0;position:relative}.back{position:absolute;top:20px;left:30px;color:#000;font-size:4em}.back:hover{color:#ea1d53}#container{text-align:center}#container #monCanvas{border:2px solid black;width:1000px;height:600px;margin-top:5vh}
