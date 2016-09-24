@@ -78,14 +78,13 @@ a
     width: 100vw
     height: 100vh
     position: fixed
-    background-color: rgba(0, 0, 0, 0.8)
+    background-color: rgba(0, 0, 0, 0.6)
     overflow: hidden
     top: 0
 
     .modal-content
         background-color: white
-        width: 80vw
-        height: 80vh
+        width: auto
         position: absolute
         border-radius: 10px
         top: 50%
@@ -109,8 +108,8 @@ a
 
         .img
             margin: 1em 0
-            max-height: 80%
-            max-width: 80%
+            max-height: 80vh
+            max-width: 80vw
 
 header
     display: flex
@@ -225,9 +224,8 @@ main
             width: 125%
 
             .img-prez
-                width: 100%
+                width: 100vw
                 height: auto
-                border: 1px solid
                 box-shadow: 0 0 10px #000
 
         .elt-text
@@ -516,6 +514,78 @@ main
             border-bottom: 1px solid $rose
             display: inline-flex
 
+footer
+    width: 100vw
+    height: 300px
+    background-color: $rose
+    box-shadow: 0 0 10px black
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: space-around
+    color: white
+    position: relative
+    padding-top: 3vh
+    .sign-item
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        font-family: 'AquaGrotesque', sans-serif
+
+    .sign-item a
+        font-size: 10vw
+        color: #f0f0f0
+        cursor: crosshair
+        @include prefix(filter, drop-shadow(0px 0px 0px white))
+        @include prefix(transition, all .5s ease)
+
+        &:hover
+            @include prefix(filter, drop-shadow(0px 0px 6px white))
+
+    .signature
+        position: absolute
+        flex-direction: row
+        bottom: 1vh
+        left: 2vw
+
+        p
+            color: #f77e9e
+
+        object
+            margin: 0 0 0 1vw
+            @include prefix(filter, drop-shadow(0px 0px 3px #595858))
+            transition: all .5s ease
+
+            &:hover
+                cursor: help
+                @include prefix(filter, drop-shadow(0px 0px 6px #e6e6e6))
+
+        .bubble
+            display: none
+            position: absolute
+            background-color: #f77e9e
+            border-radius: 10px
+
+        .bubble1
+            top: -10%
+            right: -10%
+            padding: 5px
+
+        .bubble2
+            top: -25%
+            right: -22%
+            padding: 10px
+
+        .bubble-text
+            top: -50%
+            right: -120%
+            padding: 10px
+            color: #FFF
+            font-family: 'Montserrat', sans-serif
+        .pulse
+            animation: pulse 2s infinite
+
 @media screen and (max-width: 700px)
     .canvas-logo,
     #logo_stretch,
@@ -566,3 +636,9 @@ main
             a
                 border-bottom: 0
                 text-decoration: underline
+    footer
+        height: auto
+        padding: 5vh 0
+
+        .signature
+            display: none
