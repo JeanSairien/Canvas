@@ -638,9 +638,14 @@ main #cinq a {
 	}
 	header #header nav ul {
 		padding: 0;
+		width: 100vw;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
 	}
 	header #header nav ul .nav-link {
 		font-size: 3vw;
+		padding: 0 3vw;
 	}
 	main #deux .theory pre, main #deux .theory code, main #deux .theory #fourth_part {
 		margin: 2vh 0;
